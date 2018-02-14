@@ -67,7 +67,7 @@ with tf.Session() as sess:
 		sess.run(train_step,feed_dict={xs:biatch_xs,ys:biatch_ys})
 		if i%50==0:
 			print(compute_accuracy(mnist.test.images,mnist.test.labels))
-
+	#取20个测据进行测试并画图
 	res=sess.run(prediction,feed_dict={xs: mnist.test.images[:20]})
 	print ("number is : ", sess.run(tf.argmax(res,1)))
 
