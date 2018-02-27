@@ -1,4 +1,5 @@
 # 测试1
+'''
 import tensorflow as tf
 import numpy as np
 
@@ -18,3 +19,4 @@ with tf.Session() as sess2:
   print(sess2.run(a))  # generates 'A4'
   print(sess2.run(b))  # generates 'B3'
   print(sess2.run(b))  # generates 'B4'
+'''
